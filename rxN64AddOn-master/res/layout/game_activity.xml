@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root">
+
+    <paulscode.android.mupen64plusae.GameSurface
+        android:id="@+id/gameSurface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <paulscode.android.mupen64plusae.GameOverlay
+        android:id="@+id/gameOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+    
+    <include layout="@layout/modal_dialog_list" />
+    <include layout="@layout/modal_dialog_gamepad" />
+    <include layout="@layout/modal_dialog_actions" />
+    <include layout="@layout/modal_dialog_savestates" />
+    
+</FrameLayout>
